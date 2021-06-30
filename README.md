@@ -11,19 +11,13 @@ While you are here, you might as well check out my contacts and other stuff I do
 Webpage: [shad0w.ml](www.shad0w.ml)
 Blog: [v2.shad0w.ml](v2.shad0w.ml)
 
-## Other Pages!
+## Email Server
 
-While you are here you might as well check out some other projects!!!
+If you are here because you noticed the `@sqrd.ml` email tag, this is the website used to host those as well 😎.
 
-### Blinding Lights 🔦
-[Blinding Lights](https://sqrd.ml/Blinding-Lights/) is a project meant to be QR Codes on stereroids. It never got past the conceptual phase.
+If you want one, check out [Emails](../x-squared.github.io/projects/emails.md)
 
-### Cinder
-Cool Idea, Not Feasible
+## Posts
 
-### UNIKORN 🦄
-sekrit!
-
-### ALICORN 💠
-sekrit!
-
+Here are a list of cool posts.
+[Test Post](../x-squared.github.io/posts/test%20post.md)
