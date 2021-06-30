@@ -1,6 +1,3 @@
----
-title: "Home"
----
 # Hi 👋
 
 It seems you have reached the homepage of [sqrd.ml](sqrd.ml), a website used for the displaying of my projects, collections of work, and various other things. In general, this is a place to keep old projects, and cool stuff!\
