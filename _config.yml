@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Setup
 title: Dark Poole
 url: https://andrewhwanpark.github.io/dark-poole
@@ -5,6 +6,9 @@ paginate: 1
 paginate_path: "/dark-poole/page:num/"
 baseurl: "/dark-poole"
 permalink: pretty
+=======
+remote_theme:  andrewhwanpark/dark-poole 
+>>>>>>> 6420d2585a1de53a3df3ee5d7fa094cb6d856eb4
 
 # Gems
 plugins:
