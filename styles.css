@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+
+@media (prefers-color-scheme: dark) {
+    body  { background:  rgb(0, 0, 0); color: white; }
+    :root {
+        --accent-color: white;
+    }
+
+}
+
+@media (prefers-color-scheme: light) {
+
+    body { background:  rgb(255, 255, 255); color: black; }
+    :root {
+        --accent-color: black;
+    }
+}
+
+:root {
+    --linkcol: #4081e2;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column1 {
+    float: left;
+    width: 60%;
+    margin-right: 10%;
+
+}
+
+
+
+.column2 {
+    float: left;
+    width: 30%;
+    font-size: large; 
+    position: sticky;
+    top: 60px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    margin-bottom: 20vh;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, Helvetica,  Roboto, Arial, sans-serif;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: x-large;
+    margin-top: 20vh;
+}
+
+
+
+
+p a, p a:visited  {
+    /* font-weight: 600; */
+    text-decoration: underline;
+    color: var(--accent-color);
+}
+
+p a:hover {
+    text-decoration: none;
+}
+
+.column2 h3 {
+    padding: 0;
+    margin: 0;
+}
+.column2 p {
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+.links ul li {
+    display: inline;
+    float: left;
+    padding-right: 20px;
+    margin-top: 10px;
+}
+
+.links ul {
+    padding: 0;
+}
+
+.links a {
+    text-decoration: none;
+    /* font-style: bold; */
+    color: var(--linkcol);
+    /* background-color: white; */
+    border-radius: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: solid var(--linkcol) 1px;
+    font-size: 25px;
+}
+
+
+
+.links a:hover {
+    text-decoration: none;
+    border: solid white 1px;
+    color: var(--accent-color);
+    /* background-color: rgb(223, 223, 223); */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition-duration: 0.2s;
+}
+/* h1 {
+
+}
+
+h3 {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+} */
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 900px) {
+    .column1 {
+        width: 100%;
+    }
+    .column2 {
+        width: 100%;
+        font-size: medium;
+        position: relative;
+        top: 30px;
+    }
+    body {
+        padding: 2%;
+        font-size: large;
+        margin-top: 5%;
+    }
+
+    h3 {
+        font-size: x-large;
+    }
+    h1 {
+        font-size: xx-large;
+    }
+    .links a {
+        text-decoration: none;
+        /* font-style: bold; */
+
+
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 20px;
+    }
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        margin-bottom: 50px;
+    }
+
+}
