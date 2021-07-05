@@ -7,6 +7,7 @@
     body  { background:  rgb(0, 0, 0); color: white; }
     :root {
         --accent-color: white;
+        --rev-color: black;
     }
 
 }
@@ -16,6 +17,7 @@
     body { background:  rgb(255, 255, 255); color: black; }
     :root {
         --accent-color: black;
+        --rev-color: white;
     }
 }
 
@@ -35,7 +37,21 @@
 
 }
 
-
+a {
+    background: 
+      /* linear-gradient(to right, --accent-color, --accent-color), */
+      linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 180, 1), #4081e2);
+    background-size: 100% 2px, 0 2px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+    text-decoration: none;
+  }
+  
+  a:hover,
+  a:focus {
+    background-size: 0 0.1em, 100% 0.1em;
+  }
 
 .column2 {
     float: left;
@@ -50,7 +66,7 @@
     content: "";
     display: table;
     clear: both;
-    margin-bottom: 20vh;
+    /* margin-bottom: 20vh; */
 }
 
 body {
@@ -59,14 +75,33 @@ body {
     padding-right: 10%;
     font-size: x-large;
     margin-top: 20vh;
+    height: 100%;
+
 }
 
 
+h1 {
+    padding: 0;
+    transition: 200ms;
+    /* font-size: 72px; */
+    /* color: black; */
+    background: -webkit-linear-gradient(right, rgba(255, 0, 0, 1), rgba(255, 0, 180, 1), #4081e2);
 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.wrapper {
+    min-height: 100%;
+  
+    /* Equal to height of footer */
+    /* But also accounting for potential margin-bottom of last child */
+    margin-bottom: -50px;
+  }
 
 p a, p a:visited  {
     /* font-weight: 600; */
-    text-decoration: underline;
+    /* text-decoration: underline; */
     color: var(--accent-color);
 }
 
@@ -97,6 +132,7 @@ p a:hover {
 }
 
 .links a {
+    transition: 200ms;
     text-decoration: none;
     /* font-style: bold; */
     color: var(--linkcol);
@@ -105,6 +141,8 @@ p a:hover {
     padding-left: 10px;
     padding-right: 10px;
     border: solid var(--linkcol) 1px;
+    background: var(--rev);
+    /* border: solid linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 180, 1), #4081e2), 1px; */
     font-size: 25px;
 }
 
@@ -122,10 +160,36 @@ p a:hover {
 
 }
 
+
 h3 {
     font-family: 'Roboto Mono', monospace;
     font-weight: 400;
 } */
+
+.backbutton, .backbutton a:visited {
+    color: #4081e2;
+    padding: 0;
+    margin-top: -50px;
+    margin-bottom: 20px;
+    position: absolute;
+    font-weight: 500;
+    
+}
+
+footer {
+    padding: 0;
+    transition: 200ms;
+    /* font-size: 72px; */
+    /* color: black; */
+    background: -webkit-linear-gradient(left, rgba(255, 0, 0, 1), rgba(255, 0, 180, 1), #4081e2);
+    font-weight: 700;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    /* clear: both; */
+    /* position: relative; */
+    /* margin-top: 20%; */
+    /* height: 50px; */
+}
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 900px) {
@@ -142,6 +206,7 @@ h3 {
         padding: 2%;
         font-size: large;
         margin-top: 5%;
+        min-height: 100vh;
     }
 
     h3 {
@@ -165,5 +230,26 @@ h3 {
         clear: both;
         margin-bottom: 50px;
     }
+    .backbutton, .backbutton a:visited {
+        color: #4081e2;
+        padding: 0;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        position: absolute;
+    }
+
+    footer {
+        padding-top: 50px;
+    }
 
 }
+
+
+
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) {
+
+    .wrapper {
+        margin-bottom: 100px;
+    }
+}}
